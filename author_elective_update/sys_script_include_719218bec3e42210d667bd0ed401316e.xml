@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.isDateToday</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>test whether the date is today</description>
+        <mobile_callable>false</mobile_callable>
+        <name>isDateToday</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var isDateToday = Class.create();
+isDateToday.prototype = {
+    initialize: function() {
+    },
+isDateToday: function(strDate){
+    
+    // Create GlideDateTime objects for the current date and the passed in date
+    var rightnow = new GlideDateTime();
+    var testdate = new GlideDateTime(strDate);
+    // Get the date portion of rightnow and testdate (no timestamp)
+    var today = rightnow.getLocalDate();
+    var istoday = testdate.getLocalDate();
+  
+    // Compare today and istoday to see if they are the same day
+    if(today.compareTo(istoday) == 0){
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
+    type: 'isDateToday'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-31 07:47:18</sys_created_on>
+        <sys_id>719218bec3e42210d667bd0ed401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>isDateToday</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_719218bec3e42210d667bd0ed401316e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-31 07:47:18</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>719218bec3e42210d667bd0ed401316e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-31 07:47:17</sys_created_on>
+        <sys_id>52e2d0fec3e42210d667bd0ed40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-31 07:47:17</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>cc276c931b99c2d4c8432f8dee4bcba6</instance_id>
+        <instance_name>dev256788</instance_name>
+        <name>sys_script_include_719218bec3e42210d667bd0ed401316e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.isDateToday&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;test whether the date is today&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;isDateToday&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var isDateToday = Class.create();
+isDateToday.prototype = {
+    initialize: function() {
+    },
+isDateToday: function(strDate){
+    
+    // Create GlideDateTime objects for the current date and the passed in date
+    var rightnow = new GlideDateTime();
+    var testdate = new GlideDateTime(strDate);
+    // Get the date portion of rightnow and testdate (no timestamp)
+    var today = rightnow.getLocalDate();
+    var istoday = testdate.getLocalDate();
+  
+    // Compare today and istoday to see if they are the same day
+    if(today.compareTo(istoday) == 0){
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
+    type: 'isDateToday'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:47:18&lt;/sys_created_on&gt;&lt;sys_id&gt;719218bec3e42210d667bd0ed401316e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;isDateToday&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_719218bec3e42210d667bd0ed401316e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 07:47:18&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;719218bec3e42210d667bd0ed401316e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:47:17&lt;/sys_created_on&gt;&lt;sys_id&gt;52e2d0fec3e42210d667bd0ed40131bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 07:47:17&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1443857951</payload_hash>
+        <record_name>isDateToday</record_name>
+        <reverted_from/>
+        <source>74d7d501c3a02210d667bd0ed401313b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-31 07:47:18</sys_created_on>
+        <sys_id>1ee298bec3e42210d667bd0ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195eb2b4cfd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-31 07:47:18</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>12e298be89e422109fcdbeea5d6aff93</update_guid>
+        <update_guid_history>12e298be89e422109fcdbeea5d6aff93:1443857951</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-31 07:58:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>033b95c128fe488089f683a536d42c90</sys_id>
+        <sys_metadata>719218bec3e42210d667bd0ed401316e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>isDateToday</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_719218bec3e42210d667bd0ed401316e</sys_update_name>
+        <sys_update_version display_value="sys_script_include_719218bec3e42210d667bd0ed401316e">1ee298bec3e42210d667bd0ed4013193</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-31 07:58:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
